@@ -1,0 +1,145 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: calibri;
+	list-style: none;
+}
+body{
+	background-color: yellow;
+	text-align: center;
+}
+/*here header styling starts*/
+nav{
+	background-color: firebrick;
+	color: white;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.logo{
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+}
+.logo img{
+	height: 50px;
+	border-radius: 10px;
+}
+.logo h1{
+	margin-left: 5px;
+	font-size: 50px;
+	color: yellow;
+	font-weight: 5000;
+}
+nav ul{
+	display: flex;
+	margin-right: 20px;
+}
+nav ul li{
+	margin-right: 20px;
+	font-size: 19px;
+}
+nav ul li a{
+	color: white;
+	transition: 0.2s all ease;
+}
+nav ul li a:hover{
+	color: black;
+}
+/*here header styling ends*/
+/*here main styling starts*/
+.intro-text{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+}
+.intro-img{
+	margin: 20px 0 20px 0;
+}
+.intro-img img{
+	height: 150px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.intro-text p{
+	animation: intro 15s steps(30) infinite alternate;
+	width: 0ch;
+	white-space: nowrap ;
+	overflow: hidden;
+	font-size: 20px;
+	border-right: 2px solid black;
+	margin: 10px 0;
+}
+@keyframes intro{
+	0%{
+		width: 0ch;
+	}
+	50%{
+		width: 30ch;
+	}
+}
+.imp-text{
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	justify-content: space-evenly;
+}
+.imp-text img{
+	height: 100px;
+}
+.imp-text p{
+	width: 350px;
+	padding: 20px 0;
+}
+
+.option{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 20px 0px;
+	margin-bottom: 80px;
+}
+.option li{
+	padding: 15px 15px;
+}
+.option li a{
+	color: white;
+	background-color: black;
+	padding: 5px 15px;
+	font-size: 15px;
+}
+
+/*here main styling ends*/
+footer{
+	position: fixed;
+	bottom: 0;
+	background-color: firebrick;
+	color: white;
+	width: 100%;
+	text-align: center;
+
+}
+footer p{
+	padding: 8px 0;
+}
+
+@media (max-width:556px){
+	.option{
+		flex-direction: column;
+	}
+	.option li a{
+		padding: 7px 25px;
+	}
+	nav ul{
+		display: none;
+	}
+}
